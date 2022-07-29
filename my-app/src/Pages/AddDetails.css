@@ -1,4 +1,4 @@
-.SignUpForm{
+.DetailsForm{
     border: 2px;
     width: 35%;
     padding: 20px 20px;
@@ -15,26 +15,21 @@
     font-weight: 500;
 }
 
-.Mail{
+.ManName{
     margin-top: 10px;
     text-align: left;
 }
 
-.Password1{
+.ManAddress{
     margin-top: 10px;
     text-align: left;
 }
 
-
-.Radio{
-    margin-left: 150px;
-    margin-right: 100px;
+.skuid{
+    margin-top: 10px;
+    text-align: left;
 }
 
-.Radio2{
-    margin-left: 150px;
-    margin-right: 100px;
-}
 
 .btn{
     margin-top: 10px;
@@ -42,15 +37,6 @@
     font-size: 20px;
 }
 
-.RadioLabel{
-    margin-top: 10px;
-    text-align: left;
-    font-size: 23px;
-}
-
-.form-check-label{
-    font-size: 23px;
-}
 
 .form-label{
     padding-top: 15px;
@@ -58,7 +44,3 @@
     text-align: left;
 }
 
-.haveAccount{
-    margin-top: 10px;
-    font-size: 23px;
-}

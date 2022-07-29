@@ -1,10 +1,12 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
-import './SignUp.css'
-import LogIn from './LogIn'
-const SignUp= ()=> {
-    const [user,setUser] = useState({
-        email: "", password: "", confirmPassword: "", usertype: "", agid: "", bid: ""
+import './LogIn.css'
+import SignUp from './SignUp'
+
+
+const LogIn=()=> {
+   const [user,setUser] = useState({
+        email: "", password: "", usertype: "", agid: "", bid: ""
     });
 
     let name,value;
@@ -20,14 +22,14 @@ const SignUp= ()=> {
     const PostData=async(event)=>{
         event.preventDefault();
 
-        const {email, password, confirmPassword, usertype, agid, bid} = user;
+        const {email, password, usertype, agid,bid} = user;
 
         const res = await fetch("/register", {
             method: "POST",
             headers: {"Content-Type" : "application/json"
         },
         body:JSON.stringify({
-            email, password, confirmPassword, usertype, agid,bid 
+            email, password, usertype, agid,bid 
             })
         });
 
@@ -35,28 +37,24 @@ const SignUp= ()=> {
 
     }
 
+
     return (
-        <form className="SignUpForm">
-            <div className="FormTitle">Registration Form</div>
+       <form method="POST" className="LogInForm">
+            <div className="FormTitle">Log In</div>
             <div className="Email">
                 <label for="mail" className="form-label">Email</label>
                 <input type="email" className="email" id="email" 
                     value ={user.email}
-                    onChange={handleInputs}/>
+                    onChange={handleInputs}
+                />
             </div>
             <div className="Password1">
                 <label for="inputPassword4" className="form-label">Password</label>
                 <input type="password" className="password" id="inputPassword4"
                     value ={user.password}
-                    onChange={handleInputs}/>
+                    onChange={handleInputs}
+                    />
             </div>
-            <div className="Password1">
-                <label for="inputPassword4" className="form-label">Confirm Password</label>
-                <input type="pwd" className="pwd" id="inputPassword4"
-                    value ={user.pwd}
-                    onChange={handleInputs}/>
-            </div>
-
             <div className="CheckBoxLabel">
                 Enter whether you are an aggregator or business owner
             </div>
@@ -66,28 +64,29 @@ const SignUp= ()=> {
                   onChange={handleInputs}
                   />
             </div>
-
             <div className="bid">
                 <label for="id" className="form-label">If you are a business owner, enter your business id:</label>
-                <input type="text" className="busid" id="businessid" 
-                    value ={user.busid}
-                    onChange={handleInputs}/>
+                <input type="text" className="bid" id="businessid" 
+                  value ={user.bid}
+                  onChange={handleInputs}
+                  />
             </div>
             <div className="agid">
                 <label for="id" className="form-label">If you are an aggregator, enter your authentication id:</label>
-                <input type="text" className="agid" id="aggregatorid"
-                    value ={user.agid}
-                    onChange={handleInputs} />
+                <input type="text" className="agid" id="aggregatorid" 
+                  value ={user.agid}
+                    onChange={handleInputs}
+                    />
             </div>
             <div className="Button">
-                <button type="submit" className="btn btn-primary">Register</button>
+                <button type="submit" className="btn btn-primary" onClick={PostData}>Register</button>
             </div>
 
             <div className="haveAccount">
-                Already have an account? <Link to='/LogIn'>Log In</Link>
+                Don't have an account? <Link to='/SignUp'>Sign Up</Link>
             </div>
         </form>
     )
-
 }
-export default SignUp;
+
+export default LogIn;

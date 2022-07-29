@@ -1,13 +1,15 @@
-.SignUpForm{
+.LogInForm{
     border: 2px;
     width: 35%;
     padding: 20px 20px;
-    background-color: rgb(240, 180, 253);
+    background-color: rgb(243, 193, 254);
     border-radius: 20px;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 200px;
+    margin-top: 175px;
+    font-size: medium;
+
 }
 
 .FormTitle{
@@ -15,7 +17,7 @@
     font-weight: 500;
 }
 
-.Mail{
+.Email{
     margin-top: 10px;
     text-align: left;
 }
@@ -26,12 +28,12 @@
 }
 
 
-.Radio{
+.CheckBox{
     margin-left: 150px;
     margin-right: 100px;
 }
 
-.Radio2{
+.CheckBox2{
     margin-left: 150px;
     margin-right: 100px;
 }
@@ -42,7 +44,7 @@
     font-size: 20px;
 }
 
-.RadioLabel{
+.CheckBoxLabel{
     margin-top: 10px;
     text-align: left;
     font-size: 23px;
@@ -62,3 +64,4 @@
     margin-top: 10px;
     font-size: 23px;
 }
+
