@@ -43,14 +43,14 @@ const LogIn=()=> {
             <div className="FormTitle">Log In</div>
             <div className="Email">
                 <label for="mail" className="form-label">Email</label>
-                <input type="email" className="email" id="email" 
+                <input type="email" className="email" id="email" name="email"
                     value ={user.email}
                     onChange={handleInputs}
                 />
             </div>
             <div className="Password1">
                 <label for="inputPassword4" className="form-label">Password</label>
-                <input type="password" className="password" id="inputPassword4"
+                <input type="password" className="password" id="inputPassword4" name="password"
                     value ={user.password}
                     onChange={handleInputs}
                     />
@@ -59,27 +59,27 @@ const LogIn=()=> {
                 Enter whether you are an aggregator or business owner
             </div>
             <div className="usertype">
-                <input type="text" className="usertype" id="usertype" 
+                <input type="text" className="usertype" id="usertype" name="usertype"
                   value ={user.usertype}
                   onChange={handleInputs}
                   />
             </div>
             <div className="bid">
                 <label for="id" className="form-label">If you are a business owner, enter your business id:</label>
-                <input type="text" className="bid" id="businessid" 
+                <input type="text" className="bid" id="businessid" name="bid"
                   value ={user.bid}
                   onChange={handleInputs}
                   />
             </div>
             <div className="agid">
                 <label for="id" className="form-label">If you are an aggregator, enter your authentication id:</label>
-                <input type="text" className="agid" id="aggregatorid" 
+                <input type="text" className="agid" id="aggregatorid" name="agid"
                   value ={user.agid}
                     onChange={handleInputs}
                     />
             </div>
             <div className="Button">
-                <button type="submit" className="btn btn-primary" onClick={PostData}>Register</button>
+                <button type="submit" className="btn btn-primary" onClick={PostData}>Log In</button>
             </div>
 
             <div className="haveAccount">
