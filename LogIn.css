@@ -1,0 +1,67 @@
+.LogInForm{
+    border: 2px;
+    width: 35%;
+    padding: 20px 20px;
+    background-color: rgb(243, 193, 254);
+    border-radius: 20px;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 175px;
+    font-size: medium;
+
+}
+
+.FormTitle{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.Email{
+    margin-top: 10px;
+    text-align: left;
+}
+
+.Password1{
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+.CheckBox{
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+.CheckBox2{
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+.btn{
+    margin-top: 10px;
+    width: 80%;
+    font-size: 20px;
+}
+
+.CheckBoxLabel{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 23px;
+}
+
+.form-check-label{
+    font-size: 23px;
+}
+
+.form-label{
+    padding-top: 15px;
+    font-size: 23px;
+    text-align: left;
+}
+
+.haveAccount{
+    margin-top: 10px;
+    font-size: 23px;
+}
+

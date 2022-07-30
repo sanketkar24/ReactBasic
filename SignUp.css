@@ -1,0 +1,67 @@
+.SignUpForm{
+    border: 2px;
+    width: 35%;
+    padding: 20px 20px;
+    background-color: rgb(240, 180, 253);
+    border-radius: 20px;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+}
+
+.FormTitle{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.Mail{
+    margin-top: 10px;
+    text-align: left;
+}
+
+.Password1{
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+.Radio{
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+.Radio2{
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+.btn{
+    margin-top: 10px;
+    width: 80%;
+    font-size: 20px;
+}
+
+.RadioLabel{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 23px;
+}
+
+.form-check-label{
+    font-size: 23px;
+}
+
+.form-label{
+    padding-top: 15px;
+    font-size: 23px;
+    text-align: left;
+}
+
+.haveAccount{
+    margin-top: 10px;
+    font-size: 23px;
+}
+.aggre1{
+    align-items: right;
+}
